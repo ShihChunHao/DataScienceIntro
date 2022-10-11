@@ -176,7 +176,7 @@ eth = eth.reindex(range(eth.index[0],eth.index[-1]+60,60),method='pad')
 (eth.index[1:]-eth.index[:-1]).value_counts().head()
 ```
 
-![Fig6](./../HW3FIGURE/Figure6.png =100)
+![Fig6](./../HW3FIGURE/Figure6.png)
 
 
 
