@@ -243,7 +243,7 @@ My reasoning is that since the transaction data is prone to fluctuations (this i
 <!--這次花費許多的心思在觀察缺失資料的部分，但也其實要歸功於Dataframe可以直接使用語句來處理。本次使用的方法是"PAD"方法，也就是當前數值廣播到後面的數值。<br>
 我會在下一次的作業把資料進行視覺化，利用一些動畫、圖表、圖片等方法來將整個專題完善的更加完整。-->
 
-A lot of effort has gone into looking at the missing data, but it is also due to the fact that Dataframes can be handled directly using statements. The method used is the "PAD" method, which means that the current value is broadcast to the subsequent values.
+A lot of effort has gone into looking at the missing data, but it is also due to the fact that Dataframes can be handled directly using statements. The method used is the "PAD" method, which means that the current value is broadcast to the subsequent values.<br>
 I will visualise the data in my next assignment, using animations, diagrams, pictures, etc. to complete the whole project.
 
 
