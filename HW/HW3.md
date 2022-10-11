@@ -1,6 +1,6 @@
 # Data Science Homework3
 
-#### *The purpose of Homework3 is to "Use Python to analyze some data sets with missing data (NA)".*
+### *The purpose of Homework3 is to "Use Python to analyze some data sets with missing data (NA)".*
 
 Since I found that it was too inefficient to write reports, the code needed to be cut off constantly, and there were many visual tools that could not be easily presented in PDF format, I decided to save the code directly through Github and use Markdown syntax to type out the text to explain my steps at the beginning of my third assignment.
 
