@@ -13,7 +13,7 @@ The dataset I have chosen is based on data provided by the Kaggle competition: *
 
 
 ## Introduction
-![Fig1](./../HW3FIGURE/Figure1.png){:height="100" width="100"}
+![Fig1](./../HW3FIGURE/Figure1.png)
 
 First, a quick introduction to the crypto world. Cryptocurrencies have become an extremely popular and volatile market, delivering massive returns (as well as losses) to investors. Thousands of cryptocurrencies have been created with a few major ones that many of you will have heard of including Bitcoin (BTC), Ether (ETH) or Dogecoin (DOGE).
 
