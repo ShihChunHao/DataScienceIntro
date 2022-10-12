@@ -51,7 +51,7 @@ import numpy as np
 from datetime import datetime
 ```
 
-<!--接者開始引入我們將使用的資料集：
+<!--接者開始引入我們將使用的資料集：-->
 The receiver starts introducing the dataset we will be using.
 
 ```python
