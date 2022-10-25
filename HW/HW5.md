@@ -153,7 +153,7 @@ fig.show()
 ![Fig4](./../HW3FIGURE/Figure8.png)
 
 
-##Log returns
+## Log returns
 
 In order to analyze price changes for an asset we can deal with the price difference. However, different assets exhibit different price scales, so that the their returns are not readily comparable. We can solve this problem by computing the percentage change in price instead, also known as the return. This return coincides with the percentage change in our invested capital.
 
