@@ -1,7 +1,5 @@
 # Information Security Homework1
 
-##### For better read, you can click here for the Markdown format. 
-
 ###### 109511119 施竣皓 2022/10/30
 
 <!--*Zoom 於 2020 年時被發現使用 AES-128-ECB 使得通訊的安全性低落*-->
