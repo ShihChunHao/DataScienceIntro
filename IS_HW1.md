@@ -11,7 +11,7 @@
 2020年，有人發現Zoom會把非中國的用戶資料傳到設立在中國的伺服器，這不禁讓人們擔心資訊安全——由於中國的政府可能會要求Zoom提供影像內容。（事實上，中國政府也曾透過Zoom視訊會議，抓到透過視訊會議集會的中國基督教徒。）
 
 從上述的例子中我們不難看出Zoom在過往是一間對資訊安全保護不佳的公司。而今天我們將探討的是，Zoom被發現使用AES-128-ECB方法加密的緣由，以及後面他推出更新版的一些做法。-->
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Zoom is a company that provides video conferencing services, and although it is listed on the NASDAQ in the US, it is actually a China-based company.
+&emsp;Zoom is a company that provides video conferencing services, and although it is listed on the NASDAQ in the US, it is actually a China-based company.
 
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;In 2020, it was discovered that Zoom was transferring non-Chinese user data to servers in China, raising concerns about information security - as the Chinese government might ask Zoom to provide video content. (In fact, the Chinese government has caught Chinese Christians meeting via video conferencing via Zoom.)
 
