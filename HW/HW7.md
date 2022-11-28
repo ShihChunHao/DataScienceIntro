@@ -65,8 +65,8 @@ import seaborn
 The receiver starts introducing the dataset we will be using.
 
 ```python
-data_folder = "../g-research-crypto-forecasting/"
-crypto_df = pd.read_csv(data_folder + 'train.csv')
+data = pd.read_csv('../input/creditcard.csv') # Reading the file .csv
+df = pd.DataFrame(data) # Converting data to Panda DataFrame
 ```
 
 ## Data visualisation
