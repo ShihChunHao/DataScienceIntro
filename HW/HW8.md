@@ -297,19 +297,19 @@ df.head()
 df.index = df['screen_name']
 s_data.head()
 ```
-![Fig11](./../HW4FIGURE/Figure11.png)
+![Fig11](./../HW8FIGURE/Figure11.png)
 ```python
 s_data['followers_count'] = s_data['followers_count'] +0.01
 s_data.head()
 ```
-![Fig12](./../HW4FIGURE/Figure12.png)
+![Fig12](./../HW8FIGURE/Figure12.png)
 ```python
 s_data = s_data.apply(lambda x:(x-min(x)) / (max(x)- min(x))) #doing standardization
 s_data['followers_count'] = s_data['followers_count'] +0.01
 s_data['statuses_count'] = s_data['statuses_count'] +0.01
 s_data.head()
 ```
-![Fig13](./../HW4FIGURE/Figure13.png)
+![Fig13](./../HW8FIGURE/Figure13.png)
 
 <!--經過上方的轉換後，我們可以對資料進行打分數的處理：-->
 
@@ -320,7 +320,7 @@ score = s_data['followers_count'] * s_data['statuses_count']
 score.sort_values(ascending = False)
 score
 ```
-![Fig14](./../HW4FIGURE/Figure14.png)
+![Fig14](./../HW8FIGURE/Figure14.png)
 
 <!--打完分數後，我們就可以對我們的追蹤者進行分數上的評分：-->
 After scoring, we can then rate our trackers on a scale of
@@ -329,7 +329,7 @@ import numpy as np
 s_data['segment'] = np.where(s_data['score'] >=score.median() + score.std()/len(score) , 'A', 'B')
 s_data
 ```
-![Fig15](./../HW4FIGURE/Figure15.png)
+![Fig15](./../HW8FIGURE/Figure15.png)
 
 ### Text Mining with Twitter
 
@@ -355,21 +355,21 @@ df['text'] = df['text'].str.replace('rt', '')
 
 df.text
 ```
-![Fig16](./../HW6FIGURE/Figure16.png)
+![Fig16](./../HW8FIGURE/Figure16.png)
 
 ```
 freq_df = df['text'].apply(lambda x:pd.value_counts(x.split(" "))).sum(axis = 0).reset_index()
 freq_df.columns = ['words', 'freqs']
 freq_df.sort_values('freqs',ascending=False)
 ```
-![Fig17](./../HW6FIGURE/Figure17.png)
+![Fig17](./../HW8FIGURE/Figure17.png)
 ```
 a = freq_df[freq_df.freqs > freq_df.freqs.mean() + 
        freq_df.freqs.std()] # this code for the being more meaningful
        
 a.plot.bar(x= 'words', y= 'freqs')
 ```
-![Fig18](./../HW6FIGURE/Figure18.png)
+![Fig18](./../HW8FIGURE/Figure18.png)
 
 ### Word Cloud
 
@@ -385,7 +385,7 @@ text = " ".join(i for i in df.text)
 
 text
 ```
-![Fig19](./../HW6FIGURE/Figure19.png)
+![Fig19](./../HW8FIGURE/Figure19.png)
 
 ```
 wc = WordCloud(background_color='white').generate(text)
@@ -397,7 +397,7 @@ plt.show()
 
 ```
 
-![Fig20](./../HW6FIGURE/Figure20.png)
+![Fig20](./../HW8FIGURE/Figure20.png)
 
 ### Twitter Sentiment¶
 
@@ -427,7 +427,7 @@ def sentiment_score(df):
     
 sentiment_score(df)
 ```
-![Fig21](./../HW6FIGURE/Figure21.png)
+![Fig21](./../HW8FIGURE/Figure21.png)
 
 ```
 df.groupby('sentiment_class').count()['id']
@@ -435,7 +435,7 @@ sentiment_freq = df.groupby('sentiment_class').count()['id']
 sentiment_freq.plot.bar(x= 'sentiment_class', y='id')
 
 ```
-![Fig22](./../HW6FIGURE/Figure22.png)
+![Fig22](./../HW8FIGURE/Figure22.png)
 
 ```
 tweets = api.search(q = '#apple', lang='en', count=5000)
@@ -502,13 +502,13 @@ sentiment_freq
 
 ```
 
-![Fig23](./../HW6FIGURE/Figure23.png)
+![Fig23](./../HW8FIGURE/Figure23.png)
 ```python=
 
 sentiment_freq.plot.bar(x = 'sentiment_class', y= 'id')
 
 ```
-![Fig24](./../HW6FIGURE/Figure24.png)
+![Fig24](./../HW8FIGURE/Figure24.png)
 
 
 ## Future Work
